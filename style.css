@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+/**
+ * Barlow, sans-serif 600
+ * Fraunces 700, 900
+ * Font size: 18px
+ */
+
+/**HEADER*/
+header {
+    background: url(/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 31px 25px 0 25px;
+}
+
+header h1 {
+    font-family: Fraunces, sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 2.7px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 97px 0 39px 0;
+    text-align: center;
+}
+
+.arrow {
+    margin: 0 auto;
+    padding-bottom: 133px;
+}
+
+/**MAIN*/
+main {
+    text-align: center;
+    background: #FFFBF8;
+}
+
+.brand {
+    padding: 0 30px 0 30px;
+}
+.brand h2 {
+    font-family: Fraunces, sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.brand p {
+    font-family: Barlow, sans-serif;
+}
+
+.brand button {
+    border: 0;
+
+}
+
+.clients img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
