@@ -45,7 +45,6 @@
     isolation: isolate;
   }
 
-  button {
-    border: 0;
-    background: transparent;
-}
+  a {
+    text-decoration: none;
+  }
