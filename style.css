@@ -363,6 +363,10 @@ footer .social {
         background: url(/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
     }
 
+    .clients-section h3 {
+        padding-bottom: 50px;
+    }
+    
     .clients {
         flex-direction: row;
         gap: 29px;
