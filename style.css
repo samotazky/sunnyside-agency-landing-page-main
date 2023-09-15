@@ -14,7 +14,11 @@ header {
     padding: 31px 25px 0 25px;
 }
 
-header h1 {
+.main-menu {
+    display: none;
+}
+
+.header-content h1 {
     font-family: Fraunces, sans-serif;
     font-size: 45px;
     font-weight: 900;
@@ -27,12 +31,15 @@ header h1 {
 
 .arrow {
     padding-bottom: 133px;
+    height: 250px;
+    width: 45px;
 }
 
 .header-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -42,41 +49,330 @@ main {
     background: #FFFBF8;
 }
 
-.brand {
-    padding: 0 30px 0 30px;
-    text-align: center;
-}
-.brand h2 {
+/**brand-section*/
+.brand-section h2 {
     font-family: Fraunces, sans-serif;
+    color: hsl(212, 27%, 19%);
     font-size: 32px;
     font-weight: 900;
-    letter-spacing: 2px;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
 }
 
-.brand p {
+.brand-section p {
     font-family: Barlow, sans-serif;
+    color: hsl(210, 4%, 67%);
+    margin: 30px 0 30px 0;
 }
 
-.brand a {
+.brand-section a {
     font-family: Fraunces, sans-serif;
+    color: hsl(212, 27%, 19%);
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
     position: relative;
 }
 
-.brand a:before {
+.brand-section a:before {
     position: absolute;
     content: " ";
-    background: hsl(7, 99%, 70%);
+    background: hsl(51, 100%, 49%);
     width: 100%;
     height: 5px;
     top: 18px;
     border-radius: 2px;
 }
 
-.clients img {
+.text {
+    padding: 75px 30px 75px 30px;
+}
+
+/**audience-section*/
+.audience-section h2 {
+    font-family: Fraunces, sans-serif;
+    color: hsl(212, 27%, 19%);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+}
+
+.audience-section p {
+    font-family: Barlow, sans-serif;
+    color: hsl(210, 4%, 67%);
+    margin: 30px 0 30px 0;
+}
+
+.audience-section a {
+    font-family: Fraunces, sans-serif;
+    color: hsl(212, 27%, 19%);
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.audience-section a:before {
+    position: absolute;
+    content: " ";
+    background: hsl(51, 100%, 49%);
+    width: 100%;
+    height: 5px;
+    top: 18px;
+    border-radius: 2px;
+}
+
+/**graphic-design-section*/
+.graphic-design-section {
+    background: url(/sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.graphic-design-section h2 {
+    font-family: Fraunces, sans-serif;
+    color: hsl(167, 40%, 24%);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+}
+
+.graphic-design-section p {
+    font-family: Barlow, sans-serif;
+    color: hsl(167, 40%, 24%);
+    padding-bottom: 30px;
+}
+
+/**photography-section*/
+.photography-section {
+    background: url(/sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+
+    color: hsl(198, 62%, 26%);
+}
+
+.photography-section h2 {
+    font-family: Fraunces, sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+}
+
+.photography-section p {
+    font-family: Barlow, sans-serif;
+    padding-bottom: 30px;
+}
+
+/**clients-section*/
+.clients-section {
+    padding: 40px 30px;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.clients-section h3 {
+    font-family: Fraunces, sans-serif;
+    color: hsl(210, 4%, 67%);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.client p {
+    font-family: Barlow, sans-serif;
+    color: hsl(213, 9%, 39%);
+    font-size: 18px;
+}
+
+.client h4 {
+    font-family: Fraunces, sans-serif;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+}
+
+.client img {
     border-radius: 50%;
     width: 75px;
     height: 75px;
+}
+
+.client span {
+    font-family: Barlow, sans-serif;
+    color: hsl(232, 10%, 55%);
+    font-size: 13px;
+}
+
+/**gallery-section*/
+.gallery-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}  
+
+/**footer*/
+footer {
+    color: hsl(167, 40%, 30%);
+    background-color: hsl(168, 34%, 50%);
+    font-family: Barlow, sans-serif;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+footer .social {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (min-width: 1440px) {
+    
+    header {
+        background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 783px;
+    }
+
+    .logo-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-menu {
+        display: block;
+        font-family: Barlow, sans-serif;
+        color: hsl(210, 4%, 67%);
+        font-size: 15px;
+        list-style: none;
+        text-transform: uppercase;
+    
+        display: flex;
+        gap: 20px;
+        padding-right: 20px;
+    }
+    
+    .main-menu a {
+        font-family: Barlow, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    #contact {
+        border-radius: 25px;
+        background: #fff;
+        padding: 8px 10px;
+        font-family: Fraunces, sans-serif;
+        color: hsl(212, 27%, 19%);
+    }
+    
+    #contact:hover {
+        background: #6ED0FE;
+        color: #fff;
+    }
+
+    .header-content {
+        gap: 100px;
+        padding-bottom: 130px;
+    }
+
+    .arrow {
+        height: 265px;
+    }
+
+    .brand-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .brand-section img {
+        order: 1;
+    }
+
+    .text {
+        text-align: left;
+        max-width: 390px;
+        padding: 0;
+    }
+
+    .audience-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .two-sections {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .graphic-design-section {
+        background: url(/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+    }
+
+    .text-in {
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .photography-section {
+        background: url(/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+    }
+
+    .clients {
+        flex-direction: row;
+        gap: 29px;
+        padding: 0 162px 0 162px;
+    }
+
+    .gallery-section {
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: none;
+    }
+
+
 }
